@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestingPractice]" parallel="methods">
+  <test name="seleniumWaits1(failed)" parallel="methods">
+    <classes>
+      <class name="com.AutomationConceptsPractice.ExceptionHandeling">
+        <methods>
+          <include name="handelingExceptions"/>
+        </methods>
+      </class> <!-- com.AutomationConceptsPractice.ExceptionHandeling -->
+      <class name="com.AutomationConceptsPractice.SeleniumConcepts">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.AutomationConceptsPractice.SeleniumConcepts -->
+    </classes>
+  </test> <!-- seleniumWaits1(failed) -->
+</suite> <!-- Failed suite [TestingPractice] -->

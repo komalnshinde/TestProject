@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="classes">
+  <listeners>
+    <listener class-name="Listener_Demo.ListenerTest"/>
+  </listeners>
+  <test name="testGuru(failed)" parallel="classes">
+    <groups>
+      <run>
+        <include name="P1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.AutomationConceptsPractice.ParallelExecution">
+        <methods>
+          <include name="executSessionOne"/>
+          <include name="executeSessionTwo"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.AutomationConceptsPractice.ParallelExecution -->
+    </classes>
+  </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
